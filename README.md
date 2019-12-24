@@ -6,3 +6,6 @@ Then run:
 ```
 yarn dist
 ```
+
+# Demo
+https://streamable.com/zeanh
