@@ -4,7 +4,9 @@
   "description": "A stupid electron app I made instead of sleeping.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win=portable"
   },
   "repository": "",
   "keywords": [
@@ -13,6 +15,13 @@
   "author": "Jack Johannesen",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^7.1.7"
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "karakara.marino",
+    "mac": {
+      "category": "public.app-category.entertainment"
+    }
   }
 }
